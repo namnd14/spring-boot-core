@@ -4,10 +4,10 @@ import com.spring.core.service.MessageService;
 import com.spring.core.service.RedisServiceExample;
 import com.spring.core.utils.Java8;
 import com.spring.core.utils.TextBlocks;
-import org.springframework.context.MessageSource;
-import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Objects;
 
 @RestController
 public class HelloController {
@@ -45,5 +45,6 @@ public class HelloController {
     public void redis() {
         String bike1 = redisServiceExample.getValue("bike:1").toString();
         System.out.println(bike1);
+        Objects.hash(bike1);
     }
 }

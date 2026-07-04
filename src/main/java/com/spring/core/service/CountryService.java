@@ -4,7 +4,6 @@ import com.spring.core.dto.request.SearchCountryRequestDTO;
 import com.spring.core.entity.Country;
 import com.spring.core.repository.CountryRepository;
 import com.spring.core.utils.SortColumnMapper;
-import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
